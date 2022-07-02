@@ -37,7 +37,7 @@ function Player(props) {
       <audio src={props.songs[props.currentSongIndex].src} ref={audioEl}></audio>
       <h4>playing now </h4>
       <PlayDetails song={props.songs[props.currentSongIndex]}/>
-      <PlayControls isPlaying={isPlaying} setIsPlaying={setIsPlaying} />
+      <PlayControls isPlaying={isPlaying} setIsPlaying={setIsPlaying} SkipSong={SkipSong} />
       <p><strong> Next up : </strong>{props.songs[props.nextSongIndex].title} by {props.songs[props.nextSongIndex].artist}</p>
     </div>
   )
